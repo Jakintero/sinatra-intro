@@ -1,0 +1,7 @@
+<h1>Hola soy tu notica <%= @note.name %> </h1>
+
+<p>Tengo datos sobre <%= @note.description %> y <%= @note.quantity %> caracteres.</p>
+
+
+<a href="/notes/<%= @note.id %>/edit">Edit</a>
+<a href="/notes/<%= @note.id %>/delete">Borrar</a>

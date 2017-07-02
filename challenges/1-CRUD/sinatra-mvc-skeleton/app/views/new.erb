@@ -1,0 +1,21 @@
+<h1>New Note</h1>
+
+<!-- # <% if @errors %>
+#   <h3>Su perro es invalido</h3>
+#   <img src="http://cde.3.elcomercio.pe/ima/0/1/1/1/2/1112065/base_image.jpg" alt="">
+#   <ul>
+#     <% @errors.each do |error| %>
+#     <li><%= error %></li>
+#     <% end %>
+#   </ul>
+# <% end %> -->
+
+<form action="/notes" method="post">
+  <label for="name">Nombre</label><br>
+  <input type="text" name="name" placeholder="Nombre de la nota"><br>
+  <label for="description">Descripción</label><br>
+  <input type="text" name="description" placeholder="Descripción de la nota"><br>
+  <label for="quantity">Caracteres</label><br>
+  <input type="number" name="quantity" placeholder="Cantidad del caracteres"><br>
+  <input type="submit" value="Crear">
+</form>

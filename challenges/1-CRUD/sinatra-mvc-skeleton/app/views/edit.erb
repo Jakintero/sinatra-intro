@@ -1,0 +1,12 @@
+<h1>Edita tu nota</h1>
+
+<form action="/notes/<%= @note.id %>" method="post">
+  <input type="hidden" name="_method" value="PATCH">
+  <label for="name">Nombre</label><br>
+  <input type="text" name="name" value="<%= @note.name %>"><br>
+  <label for="description">Descripción</label><br>
+  <textarea name="description" value=><%= @note.description %></textarea><br>
+  <label for="quantity">Caracteres</label><br>
+  <input type="number" name="quantity" value="<%= @note.quantity %>"><br>
+  <input type="submit" value="Guardar">
+</form>
