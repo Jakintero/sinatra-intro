@@ -1,0 +1,11 @@
+<h1>Bienvenido al blog</h>
+
+  <p><%= @entries.all %></p>
+
+  <ul>
+  <% @entries.each do |entry| %>
+    <li><a href="/entries/<%= entry.id %>"><%= entry.title %></a></li>
+
+  <% end %>
+  </ul>
+<a href="/entries/new">Crea una entrada<a/>
